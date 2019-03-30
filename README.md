@@ -4,12 +4,12 @@ The Dining Philosopher Problem states that K philosophers seated around a circul
 # Semaphore Solution to Dining Philosopher –
 Each philosopher is represented by the following pseudocode:
 
-process P[i]
- while true do
-   {  THINK;
-      PICKUP(CHOPSTICK[i], CHOPSTICK[i+1 mod 5]);
-      EAT;
-      PUTDOWN(CHOPSTICK[i], CHOPSTICK[i+1 mod 5])
+1.process P[i]
+2.while true do
+3.{  THINK;
+4.    PICKUP(CHOPSTICK[i], CHOPSTICK[i+1 mod 5]);
+5.    EAT;
+6.   PUTDOWN(CHOPSTICK[i], CHOPSTICK[i+1 mod 5])
    }
 There are three states of philosopher: THINKING, HUNGRY and EATING. 
 Here there are two semaphores: Mutex and a semaphore array for the philosophers. The mutex is used such that no two philosophers may access the pickup or putdown at the same time. The array is used to control the behaviour of each philosopher.
