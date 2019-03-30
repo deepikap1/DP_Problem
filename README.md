@@ -11,5 +11,7 @@ Each philosopher is represented by the following pseudocode:
 5.    EAT;
 6.   PUTDOWN(CHOPSTICK[i], CHOPSTICK[i+1 mod 5])
    }
+
 There are three states of philosopher: THINKING, HUNGRY and EATING. 
+
 Here there are two semaphores: Mutex and a semaphore array for the philosophers. The mutex is used such that no two philosophers may access the pickup or putdown at the same time. The array is used to control the behaviour of each philosopher.
