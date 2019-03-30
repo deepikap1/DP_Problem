@@ -19,7 +19,7 @@ Here there are two semaphores: Mutex and a semaphore array for the philosophers.
 use these commands in terminal for compilation.
 
 # How to compile this code:
-$ gcc dp.c o dp -lpthread
+$ gcc dp.c -o dp -lpthread
 
 # how to run this code:
 $ ./dp
