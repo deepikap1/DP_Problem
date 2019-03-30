@@ -15,3 +15,11 @@ Each philosopher is represented by the following pseudocode:
 There are three states of philosopher: THINKING, HUNGRY and EATING. 
 
 Here there are two semaphores: Mutex and a semaphore array for the philosophers. The mutex is used such that no two philosophers may access the pickup or putdown at the same time. The array is used to control the behaviour of each philosopher.
+# For Ubuntu
+use these commands in terminal for compilation.
+
+# How to compile this code:
+$ gcc dp.c o dp -lpthread
+
+# how to run this code:
+$ ./dp
